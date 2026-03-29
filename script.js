@@ -33,7 +33,7 @@ closeSettings.addEventListener('click', () => {
     settingsPane.classList.remove('active');
 });
 
-// Dark mode toggle
+// Dark mode toggles
 darkModeToggle.addEventListener('change', () => {
     document.body.classList.toggle('dark-mode');
 });
