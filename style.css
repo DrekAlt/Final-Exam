@@ -3,13 +3,13 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: #0f172a;
-    color: #e2e8f0;
+    background: #f8fafc; /* soft light gray */
+    color: #0f172a; /* dark text */
 }
 
 /* HERO */
 .hero {
-    background: linear-gradient(rgba(2,6,23,0.7), rgba(2,6,23,0.9)),
+    background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.9)),
     url('images/header.jpg') center/cover no-repeat;
 
     padding: 120px 20px;
@@ -21,16 +21,16 @@ body {
 
     text-align: center;
 }
-
 /* NAV */
 nav {
     margin-top: 10px;
 }
 
 nav a {
-    color: white;
+    color: #0f172a;
     margin: 0 15px;
     text-decoration: none;
+    font-weight: 500;
 }
 
 nav a:hover {
@@ -51,10 +51,17 @@ section {
 /* FEATURE */
 .feature {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 30px;
     flex-wrap: wrap;
+
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 20px;
+    max-width: 700px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
 .feature img {
@@ -71,11 +78,12 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #1e293b;
+    background: white;
     padding: 20px;
     margin: 15px auto;
     border-radius: 20px;
     max-width: 700px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
 .service-card img {
@@ -119,10 +127,11 @@ section {
 }
 
 .box {
-    background: #1e293b;
+    background: white;
     padding: 20px;
     border-radius: 20px;
     width: 200px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
 /* FORM */
