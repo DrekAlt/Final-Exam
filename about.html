@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>About - Z.E.D Web Solutions</title>
+    <title>Z.E.D Web Solutions</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -19,56 +20,44 @@
 </header>
 
 <section>
-    <h2>About Us</h2>
+    <h2>Welcome to Z.E.D Web Solutions</h2>
+    <p class="desc">
+        We build modern, responsive websites designed to help businesses grow online.
+    </p>
 
-   <div class="about-top">
+    <h3>Featured Service</h3>
+    <div class="feature">
+        <div>
+            <p><i class="fas fa-laptop-code"></i> <strong>Business Website – ₱3,000</strong></p>
+            <button onclick="chooseService('Business Website')">
+                <i class="fas fa-check-circle"></i> Choose
+            </button>
+        </div>
+        <img src="images/web.jpg">
+    </div>
+</section>
 
-    <!-- LEFT IMAGE -->
-    <div class="about-images">
-        <img src="images/about1.jpg">
+<section id="services">
+    <h2>Our Services</h2>
+
+    <div class="service-card">
+        <div>
+            <h3><i class="fas fa-rocket"></i> Startup Design</h3>
+            <p>Perfect for beginners.</p>
+            <p><strong>₱1,500</strong></p>
+            <button onclick="chooseService('Startup Design')"><i class="fas fa-check-circle"></i> Choose</button>
+        </div>
+        <img src="images/placeholder1.jpg">
     </div>
 
-    <!-- TEXT -->
-    <div class="about-text">
-    <p>
-        Z.E.D Web Solutions is dedicated to building modern, reliable, and visually 
-        appealing websites tailored for both individuals and businesses.
-    </p>
-
-    <p>
-        We believe that a strong online presence is essential in today's digital world. 
-        That’s why we focus on clean design, responsive layouts, and user-friendly 
-        experiences that help our clients stand out.
-    </p>
-
-    <p>
-        Whether you're just starting out or looking to improve your current website, 
-        our goal is to provide affordable, high-quality solutions that deliver real results.
-    </p>
-</div>
-
-    <!-- RIGHT IMAGE -->
-    <div class="about-images">
-        <img src="images/about2.jpg">
-    </div>
-
-</div>
-
-    <div class="about-boxes">
-        <div class="box">
-            <h3>Mission</h3>
-            <p>Clean and user-friendly websites.</p>
+    <div class="service-card">
+        <div>
+            <h3><i class="fas fa-tools"></i> Website Maintenance</h3>
+            <p>Keep your website updated.</p>
+            <p><strong>₱1,000 / month</strong></p>
+            <button onclick="chooseService('Website Maintenance')"><i class="fas fa-check-circle"></i> Choose</button>
         </div>
-
-        <div class="box">
-            <h3>Vision</h3>
-            <p>Trusted web development name.</p>
-        </div>
-
-        <div class="box">
-            <h3>Why Choose Us</h3>
-            <p>Affordable and reliable.</p>
-        </div>
+        <img src="images/placeholder2.jpg">
     </div>
 </section>
 
@@ -76,7 +65,21 @@
     <p>© 2026 Z.E.D Web Solutions</p>
 </footer>
 
-<script src="script.js"></script>
+<!-- Settings Button -->
+<div id="settings-btn">
+    <i class="fas fa-cog"></i>
+</div>
 
+<!-- Settings Pane -->
+<div id="settings-pane">
+    <h3>Settings</h3>
+    <label>
+        <input type="checkbox" id="darkModeToggle">
+        Dark Mode
+    </label>
+    <button id="closeSettings">Close</button>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
