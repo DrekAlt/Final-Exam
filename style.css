@@ -109,8 +109,10 @@ section {
 }
 
 .about-images img {
-    width: 140px;
-    border-radius: 10px;
+    width: 160px;
+    height: 260px; /* makes it taller */
+    object-fit: cover; /* prevents stretching */
+    border-radius: 12px;
 }
 
 /* TEXT CENTER */
