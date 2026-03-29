@@ -18,3 +18,22 @@ function chooseService(service) {
 
     alert(message);
 }
+
+// Settings pane functionality
+const settingsBtn = document.getElementById('settings-btn');
+const settingsPane = document.getElementById('settings-pane');
+const closeSettings = document.getElementById('closeSettings');
+const darkModeToggle = document.getElementById('darkModeToggle');
+
+settingsBtn.addEventListener('click', () => {
+    settingsPane.classList.toggle('active');
+});
+
+closeSettings.addEventListener('click', () => {
+    settingsPane.classList.remove('active');
+});
+
+// Dark mode toggle
+darkModeToggle.addEventListener('change', () => {
+    document.body.classList.toggle('dark-mode');
+});
