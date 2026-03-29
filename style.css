@@ -21,7 +21,7 @@
 #settings-pane {
     position: fixed;
     top: 50%;
-    right: -300px; /* hidden by default */
+    right: -300px; 
     transform: translateY(-50%);
     width: 280px;
     background: #e2e8f0;
