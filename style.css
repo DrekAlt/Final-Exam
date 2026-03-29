@@ -149,15 +149,24 @@ form input, form textarea {
 /* BUTTON */
 button {
     background: #38bdf8;
+    color: white;
     border: none;
-    padding: 10px;
+    padding: 10px 16px;
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
+    font-weight: 500;
 }
 
 button:hover {
     transform: scale(1.05);
+}
+/*Hover*/
+.service-card:hover,
+.feature:hover,
+.box:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
 }
 
 /* FOOTER */
