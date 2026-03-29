@@ -3,16 +3,13 @@
 <head>
     <title>Z.E.D Web Solutions</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
 <header class="hero">
-    <h1 class="fade-in">Z.E.D Web Solutions</h1>
-    <p class="fade-in" style="animation-delay: 0.3s;">Smart Code. Clean Design. Real Results.</p>
-    <button class="cta-button fade-in" style="animation-delay: 0.6s;" onclick="location.href='#services'">View Services</button>
+    <h1>Z.E.D Web Solutions</h1>
+    <p>Smart Code. Clean Design. Real Results.</p>
 
     <nav>
         <a href="index.html">Home</a>
@@ -28,35 +25,37 @@
     </p>
 
     <h3>Featured Service</h3>
-    <div class="feature fade-in">
+    <div class="feature">
         <div>
             <p><strong>Business Website – ₱3,000</strong></p>
             <button onclick="chooseService('Business Website')">Choose</button>
         </div>
-        <img src="images/web.jpg" alt="Business Website">
+        <img src="images/web.jpg">
     </div>
 </section>
 
 <section id="services">
     <h2>Our Services</h2>
 
-    <div class="service-card fade-in">
-        <div>
-            <h3><i class="fa-solid fa-laptop-code"></i> Startup Design</h3>
-            <p>Perfect for beginners.</p>
-            <p><strong>₱1,500</strong></p>
-            <button onclick="chooseService('Startup Design')">Choose</button>
-        </div>
+   <div class="service-card">
+    <div>
+        <h3>Startup Design</h3>
+        <p>Perfect for beginners.</p>
+        <p><strong>₱1,500</strong></p>
+        <button onclick="chooseService('Startup Design')">Choose</button>
     </div>
+    <img src="images/placeholder1.jpg">
+</div>
 
-    <div class="service-card fade-in">
-        <div>
-            <h3><i class="fa-solid fa-gear"></i> Website Maintenance</h3>
-            <p>Keep your website updated.</p>
-            <p><strong>₱1,000 / month</strong></p>
-            <button onclick="chooseService('Website Maintenance')">Choose</button>
-        </div>
+<div class="service-card">
+    <div>
+        <h3>Website Maintenance</h3>
+        <p>Keep your website updated.</p>
+        <p><strong>₱1,000 / month</strong></p>
+        <button onclick="chooseService('Website Maintenance')">Choose</button>
     </div>
+    <img src="images/placeholder2.jpg">
+</div>
 
 </section>
 
@@ -65,5 +64,6 @@
 </footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>
