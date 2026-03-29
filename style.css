@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(2,6,23,0.7), rgba(2,6,23,0.9)),
+    url('images/header.jpg') center/cover no-repeat;
+
+    padding: 120px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+/* NAV */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* TEXT CENTER */
+section {
+    text-align: center;
+    padding: 20px;
+}
+
+.desc {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* FEATURE */
+.feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.feature img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* SERVICES */
+#services {
+    padding: 40px;
+}
+
+.service-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e293b;
+    padding: 20px;
+    margin: 15px auto;
+    border-radius: 20px;
+    max-width: 700px;
+}
+
+.service-card img {
+    width: 120px;
+    border-radius: 10px;
+}
+
+/* ABOUT FIXED LAYOUT */
+.about-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* LEFT SIDE IMAGES */
+.about-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about-images img {
+    width: 100px;
+    border-radius: 10px;
+}
+
+/* TEXT CENTER */
+.about-text {
+    max-width: 400px;
+}
+
+/* BOXES */
+.about-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.box {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 20px;
+    width: 200px;
+}
+
+/* FORM */
+form input, form textarea {
+    width: 250px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* BUTTON */
+button {
+    background: #38bdf8;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    background: #020617;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
