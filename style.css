@@ -109,12 +109,10 @@ section p {
 }
 
 .service-card img {
-    flex: 0 0 30%;    
-    max-width: 120px;
+    flex: 0 0 40%;      
+    max-width: 250px;    
     border-radius: 10px;
 }
-
-/* Hover lift effect */
 .service-card:hover,
 .feature:hover,
 .box:hover {
