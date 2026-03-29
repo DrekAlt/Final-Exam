@@ -3,7 +3,10 @@
 <head>
     <title>Z.E.D Web Solutions</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
 <header class="hero">
@@ -26,8 +29,10 @@
     <h3>Featured Service</h3>
     <div class="feature">
         <div>
-            <p><strong>Business Website – ₱3,000</strong></p>
-            <button onclick="chooseService('Business Website')">Choose</button>
+            <p><i class="fas fa-laptop-code"></i> <strong>Business Website – ₱3,000</strong></p>
+            <button onclick="chooseService('Business Website')">
+                <i class="fas fa-check-circle"></i> Choose
+            </button>
         </div>
         <img src="images/web.jpg">
     </div>
@@ -38,20 +43,20 @@
 
     <div class="service-card">
         <div>
-            <h3>Startup Design</h3>
+            <h3><i class="fas fa-rocket"></i> Startup Design</h3>
             <p>Perfect for beginners.</p>
             <p><strong>₱1,500</strong></p>
-            <button onclick="chooseService('Startup Design')">Choose</button>
+            <button onclick="chooseService('Startup Design')"><i class="fas fa-check-circle"></i> Choose</button>
         </div>
         <img src="images/placeholder1.jpg">
     </div>
 
     <div class="service-card">
         <div>
-            <h3>Website Maintenance</h3>
+            <h3><i class="fas fa-tools"></i> Website Maintenance</h3>
             <p>Keep your website updated.</p>
             <p><strong>₱1,000 / month</strong></p>
-            <button onclick="chooseService('Website Maintenance')">Choose</button>
+            <button onclick="chooseService('Website Maintenance')"><i class="fas fa-check-circle"></i> Choose</button>
         </div>
         <img src="images/placeholder2.jpg">
     </div>
@@ -60,6 +65,21 @@
 <footer>
     <p>© 2026 Z.E.D Web Solutions</p>
 </footer>
+
+<!-- Settings Button -->
+<div id="settings-btn">
+    <i class="fas fa-cog"></i>
+</div>
+
+<!-- Settings Pane -->
+<div id="settings-pane">
+    <h3>Settings</h3>
+    <label>
+        <input type="checkbox" id="darkModeToggle">
+        Dark Mode
+    </label>
+    <button id="closeSettings">Close</button>
+</div>
 
 <script src="script.js"></script>
 </body>
