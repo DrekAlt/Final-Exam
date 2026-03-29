@@ -90,21 +90,29 @@ section p {
 
 .service-card {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start; /* aligns content naturally */
     align-items: center;
+    gap: 20px;                   /* space between text and image */
+    background: #e2e8f0;
+    border: 1px solid #cbd5e1;
+    padding: 20px;
+    margin: 15px auto;
+    border-radius: 20px;
+    max-width: 700px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     flex-wrap: wrap;
 }
 
 .service-card div {
-    flex: 1; 
-    text-align: left;
+    flex: 0 0 70%;    /* text takes 70% width */
+    text-align: left; 
 }
 
 .service-card img {
-    width: 120px;
+    flex: 0 0 30%;    /* image takes 30% width */
+    max-width: 120px;
     border-radius: 10px;
 }
-
 .service-card, .feature, .box {
     background: #e2e8f0;       
     border: 1px solid #cbd5e1; 
